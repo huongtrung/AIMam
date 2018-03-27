@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe_layout"
+        leftEdgeSwipeOffset="0dp"
+        rightEdgeSwipeOffset="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black_bg">
+
+        <LinearLayout
+            android:id="@+id/right_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_green">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_10"
+                android:layout_marginRight="@dimen/spacing_10"
+                android:text="@string/title_del"
+                android:textAllCaps="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_12">
+
+            <ImageView
+                android:id="@+id/iv_restaurant"
+                android:layout_width="@dimen/spacing_80"
+                android:layout_height="@dimen/spacing_80"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy_img2" />
+
+            <RelativeLayout
+                android:id="@+id/rl_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_10"
+                android:layout_toRightOf="@+id/iv_restaurant">
+
+                <at.blogc.android.views.ExpandableTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="@color/color_green"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    app:animation_duration="400"
+                    tools:text="THANG LONG" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10"
+                    tools:text="9:51 AM" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_shop_name"
+                android:layout_marginLeft="@dimen/spacing_10"
+                android:layout_toRightOf="@+id/iv_restaurant">
+
+                <at.blogc.android.views.ExpandableTextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_message_common"
+                    android:maxLines="1"
+                    app:animation_duration="400"
+                    android:gravity="center_vertical|left"
+                    tools:text="YOUR SAMPLE TEXT GÓE HERE" />
+
+                <at.blogc.android.views.ExpandableTextView
+                    android:id="@+id/tv_content"
+                    style="@style/text_message_common"
+                    android:layout_below="@+id/tv_title"
+                    android:maxLines="2"
+                    android:gravity="center_vertical|left"
+                    app:animation_duration="400"
+                    tools:text="Lorem ipsum dolor sit a mentsdfsdf" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+    <View
+        style="@style/item_divider"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10" />
+</LinearLayout>

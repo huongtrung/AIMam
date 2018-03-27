@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_black_bg"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_food_list"
+        android:layout_width="@dimen/special_item_img_size"
+        android:layout_height="@dimen/special_item_img_size"
+        android:layout_marginLeft="@dimen/special_item_padding"
+        android:layout_marginTop="@dimen/special_item_padding"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_img2" />
+
+    <LinearLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_food_list"
+        android:layout_alignBottom="@id/iv_food_list"
+        android:layout_marginLeft="@dimen/special_item_padding"
+        android:layout_marginRight="@dimen/special_item_padding"
+        android:layout_toRightOf="@id/iv_food_list"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            style="@style/text_menu_green"
+            tools:text="Food or drink name" />
+
+        <TextView
+            android:id="@+id/tv_food_intro"
+            style="@style/text_menu_white"
+            android:layout_marginTop="@dimen/special_item_descr_margin_top"
+            tools:text="Introduction of food or drink" />
+
+        <LinearLayout
+            android:id="@+id/ll_integration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/special_item_descr_margin_top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/image_menu_common"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_eye_green" />
+
+                <TextView
+                    style="@style/tv_food_common"
+                    android:text="@string/txt_view" />
+
+                <TextView
+                    android:id="@+id/tv_view"
+                    style="@style/tv_food_common" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ic_like"
+                    style="@style/image_restaurant_common"
+                    android:layout_marginRight="@dimen/spacing_5"
+                    android:src="@drawable/ic_like_green" />
+
+                <TextView
+                    style="@style/tv_food_common"
+                    android:text="@string/txt_like" />
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    style="@style/tv_food_common" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_below="@id/ll_integration"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_dark_green"
+                android:textSize="@dimen/special_item_price_text_size"
+                tools:text="50.000.000VNĐ" />
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srb_drawBorderEnabled="false"
+                app:srb_fillColor="@color/color_dark_green"
+                android:layout_alignParentEnd="true"
+                app:srb_maxStarSize="@dimen/special_item_rate_star_size"
+                app:srb_numberOfStars="5"
+                app:srb_starBackgroundColor="@color/color_gray_star"
+                app:srb_starSize="@dimen/special_item_rate_star_size"
+                app:srb_starsSeparation="1dp"
+                app:srb_stepSize="0.5" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/item_divider_white"
+        android:layout_below="@+id/iv_food_list"
+        android:layout_marginTop="@dimen/special_item_padding"
+        android:layout_marginLeft="@dimen/special_item_padding"
+        android:layout_marginRight="@dimen/special_item_padding" />
+</RelativeLayout>

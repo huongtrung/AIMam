@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Home Screen-->
+    <!--Shop Suggest-->
+    <style name="layout_shop_common">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/spacing_5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="layout_shop_two_common">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/spacing_5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/color_black</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="image_shop_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">77</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/dummy_restaurant</item>
+    </style>
+
+    <style name="title_shop_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/spacing_2</item>
+        <item name="android:textColor">@color/color_dark_green</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="title_shop_percent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="title_shop_two_percent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="layout_text_shop_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="image_shop_marker">
+        <item name="android:layout_width">@dimen/size_8</item>
+        <item name="android:layout_height">@dimen/size_8</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/ic_marker_black</item>
+    </style>
+
+    <style name="image_shop_two_marker">
+        <item name="android:layout_width">@dimen/size_8</item>
+        <item name="android:layout_height">@dimen/size_8</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/ic_marker</item>
+    </style>
+
+    <style name="text_shop_distance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="text_shop_two_distance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="bg_main_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/color_gray_bg</item>
+        <item name="android:paddingBottom">@dimen/spacing_5</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_10</item>
+    </style>
+
+    <style name="text_main_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_17</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/spacing_5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ly_info_padding">
+        <item name="android:paddingLeft">@dimen/spacing_8</item>
+        <item name="android:paddingRight">@dimen/spacing_8</item>
+    </style>
+
+    <!--Detail Coupon Screen-->
+    <style name="detailcoupon_screen_tv">
+        <item name="android:layout_marginLeft">@dimen/spacing_10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!--Shop user's subscribed-->
+    <style name="text_restaurant_name">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:lines">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:layout_marginTop">@dimen/spacing_8</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_8</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="icon_view_like">
+        <item name="android:layout_width">@dimen/spacing_20</item>
+        <item name="android:layout_height">@dimen/spacing_20</item>
+        <item name="android:layout_marginRight">@dimen/spacing_10</item>
+    </style>
+
+    <style name="tv_view_like">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:layout_marginRight">@dimen/spacing_8</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--Photo manage-->
+    <style name="bt_layout_upload">
+        <item name="android:layout_width">360dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/bt_layout_upload_selector</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_30</item>
+        <item name="android:layout_marginRight">@dimen/spacing_30</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="ic_in_btn_layout">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="tv_in_btn_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--Edit Profile-->
+    <style name="btn_save_pf">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/bt_user_login_selector</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/spacing_10</item>
+        <item name="android:paddingRight">@dimen/spacing_10</item>
+        <item name="android:layout_marginTop">@dimen/spacing_18</item>
+    </style>
+
+    <style name="text_error_edit_pf">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">@dimen/et_login_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_5</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_12</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/txt_red</item>
+    </style>
+
+    <!--Upload Image Screen-->
+    <style name="btn_yes_no_upload_image">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bt_send_about_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--Tutorial screen-->
+    <style name="btn_skip_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bt_skip_tut_selector</item>
+        <item name="android:textColor">@color/color_light_green</item>
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_skip</item>
+    </style>
+
+    <style name="text_tut_green">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_light_green</item>
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="text_tut_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

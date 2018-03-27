@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.LoginFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_60">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/logo_size_normal"
+                android:layout_height="@dimen/logo_size_normal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_40"
+                android:src="@drawable/ic_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_60"
+                android:text="@string/title_user_login"
+                android:textAllCaps="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/et_user_login"
+                android:hint="@string/edt_hint_email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/tv_error_email"
+                style="@style/text_error"
+                android:text="@string/error_mess_email" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/et_user_login"
+                android:hint="@string/edt_hint_pass"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tv_error_pass"
+                style="@style/text_error"
+                android:text="@string/error_mess_pass" />
+
+            <Button
+                android:id="@+id/bt_login"
+                style="@style/bt_custom_green"
+                android:text="@string/title_login" />
+
+            <TextView
+                style="@style/tv_user_login"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_35"
+                android:text="@string/title_text_login" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_18">
+
+                <ImageView
+                    android:id="@+id/iv_login_fb"
+                    android:layout_width="@dimen/ic_fb_height"
+                    android:layout_height="@dimen/ic_fb_height"
+                    android:layout_marginRight="@dimen/spacing_25"
+                    android:src="@drawable/ic_facebook_large" />
+
+                <ImageView
+                    android:id="@+id/iv_login_instagram"
+                    android:layout_width="@dimen/ic_fb_height"
+                    android:layout_height="@dimen/ic_fb_height"
+                    android:src="@drawable/ic_instagram_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_18"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_30"
+                    android:text="@string/title_text_create_account"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/tv_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_text_register_now"
+                    android:textColor="@color/color_green"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

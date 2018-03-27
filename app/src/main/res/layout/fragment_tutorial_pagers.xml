@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_bg"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/top_to_text_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_tut_green"
+            style="@style/text_tut_green"
+            android:text="AAAAAAA"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_tut_white"
+            style="@style/text_tut_white"
+            android:lines="2"
+            android:text="AAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAA"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/space_between_green_white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tutorial_page1" />
+
+</RelativeLayout>

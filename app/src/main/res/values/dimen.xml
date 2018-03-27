@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_size">200dp</dimen>
+    <dimen name="logo_size_normal">140dp</dimen>
+    <dimen name="nav_avatar_size">80dp</dimen>
+    <dimen name="avatar_size">150dp</dimen>
+    <dimen name="avatar_size_170">170dp</dimen>
+    <dimen name="bg_height">280dp</dimen>
+    <dimen name="editpf_avatar_size">100dp</dimen>
+    <dimen name="iv_album_item">80dp</dimen>
+    <dimen name="pf_head_height">350dp</dimen>
+    <dimen name="height_gg_map">220dp</dimen>
+
+    <dimen name="width_190">190dp</dimen>
+    <dimen name="width_160">160dp</dimen>
+    <dimen name="width_150">150dp</dimen>
+    <dimen name="width_100">100dp</dimen>
+
+    <dimen name="height_300">300dp</dimen>
+    <dimen name="height_250">250dp</dimen>
+    <dimen name="height_210">210dp</dimen>
+    <dimen name="height_160">160dp</dimen>
+    <dimen name="height_140">140dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="height_170">170dp</dimen>
+    <dimen name="height_500">500dp</dimen>
+
+    <dimen name="size_300">300dp</dimen>
+    <dimen name="size_220">220dp</dimen>
+    <dimen name="size_180">180dp</dimen>
+    <dimen name="size_160">160dp</dimen>
+    <dimen name="size_140">140dp</dimen>
+    <dimen name="size_120">120dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+
+    <dimen name="et_login_width">240dp</dimen>
+    <dimen name="et_login_height">40dp</dimen>
+    <dimen name="ic_bottom_width">35dp</dimen>
+    <dimen name="ic_bottom_height">25dp</dimen>
+    <dimen name="ic_question_height">20dp</dimen>
+    <dimen name="ic_fb_height">60dp</dimen>
+    <dimen name="ic_back_width">20dp</dimen>
+    <dimen name="ic_back_height">20dp</dimen>
+    <dimen name="ic_review_fb">30dp</dimen>
+    <dimen name="ic_review_likes">14dp</dimen>
+    <dimen name="ic_review_cm_height">25dp</dimen>
+    <dimen name="ic_review_cm_width">65dp</dimen>
+
+    <dimen name="spacing_200">200dp</dimen>
+    <dimen name="spacing_150">150dp</dimen>
+    <dimen name="spacing_120">120dp</dimen>
+    <dimen name="spacing_100">100dp</dimen>
+    <dimen name="spacing_80">80dp</dimen>
+    <dimen name="spacing_60">60dp</dimen>
+    <dimen name="spacing_55">55dp</dimen>
+    <dimen name="spacing_50">50dp</dimen>
+    <dimen name="spacing_44">44dp</dimen>
+    <dimen name="spacing_40">40dp</dimen>
+    <dimen name="spacing_35">35dp</dimen>
+    <dimen name="spacing_30">30dp</dimen>
+    <dimen name="spacing_25">25dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_18">18dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_15">15dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_7">7dp</dimen>
+    <dimen name="spacing_6">6dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_2">2dp</dimen>
+
+    <dimen name="text_size_31">31sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_6">6sp</dimen>
+
+    <!--Couponlist screen-->
+    <dimen name="couponlist_header_height">250dp</dimen>
+    <dimen name="couponlist_img_size">100dp</dimen>
+    <dimen name="couponlist_btn_getcode_width">60dp</dimen>
+    <dimen name="couponlist_btn_getcode_height">25dp</dimen>
+
+    <!--CouponDetail-->
+    <dimen name="coupondetail_header_height">250dp</dimen>
+
+    <!--Review screen-->
+    <dimen name="edt_write_cm_height">150dp</dimen>
+    <dimen name="ic_refresh">25dp</dimen>
+    <dimen name="tv_rv_code_height">40dp</dimen>
+    <dimen name="tv_rv_code_width">90dp</dimen>
+    <dimen name="iv_cmter_ava">80dp</dimen>
+    <dimen name="rating_star_size">18dp</dimen>
+    <dimen name="shop_title_text_size">15sp</dimen>
+
+    <!--Upload screen-->
+    <dimen name="layout_btn_height">80dp</dimen>
+    <dimen name="iv_upload_size">40dp</dimen>
+
+    <dimen name="upload_checkbox_size">16dp</dimen>
+    <dimen name="upload_iv_item">60dp</dimen>
+    <dimen name="ic_marker">30dp</dimen>
+
+    <!--Photo manage-->
+    <dimen name="logo_green_size">140dp</dimen>
+
+    <!-- Shop stamp-->
+    <dimen name="stamp_item_spacing">1dp</dimen>
+</resources>

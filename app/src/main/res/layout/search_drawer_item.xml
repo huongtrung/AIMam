@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.ShopSearchFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_10"
+                android:layout_marginRight="@dimen/spacing_10"
+                android:layout_marginTop="@dimen/spacing_20"
+                android:background="@drawable/bg_search_shop">
+
+                <View
+                    android:id="@+id/divider_line"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/spacing_25"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_search"
+                    android:background="@color/line_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="@dimen/spacing_20"
+                    android:layout_height="@dimen/spacing_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:layout_marginRight="@dimen/spacing_10"
+                    android:src="@drawable/ic_search" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:layout_toEndOf="@+id/divider_line"
+                    android:hint="@string/title_restaurant"
+                    android:backgroundTint="@color/color_dark_bg"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textAutoComplete|textAutoCorrect"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@color/color_white"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_not_result"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:text="@string/not_found_result"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout style="@style/bg_search_common">
+
+                        <TextView
+                            style="@style/text_search_common"
+                            android:text="@string/title_shop_suggestion" />
+
+                        <vn.gmorunsystem.aimam.ui.customview.WrapContentViewPager
+                            android:id="@+id/vp_search_suggestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/spacing_20" />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/item_divider_white"
+                        android:layout_marginLeft="@dimen/spacing_5"
+                        android:layout_marginRight="@dimen/spacing_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_adv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout style="@style/bg_search_common">
+
+                        <TextView
+                            style="@style/text_search_common"
+                            android:text="@string/title_shop_ads" />
+
+                        <vn.gmorunsystem.aimam.ui.customview.WrapContentViewPager
+                            android:id="@+id/vp_search_ads"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/spacing_20" />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/item_divider_white"
+                        android:layout_marginLeft="@dimen/spacing_5"
+                        android:layout_marginRight="@dimen/spacing_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

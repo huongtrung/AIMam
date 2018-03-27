@@ -1,0 +1,68 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_bg"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.ShopHotFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shop_hot_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/list_no_data"
+            android:textColor="@color/color_gray"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_coupon_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_special_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_coupon_list"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_special"
+                style="@style/text_food_hot"
+                android:layout_margin="@dimen/spacing_10"
+                android:text="@string/txt_special_food" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_special_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_new_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_special_food"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_new"
+                style="@style/text_food_hot"
+                android:layout_margin="@dimen/spacing_10"
+                android:text="@string/txt_new_food" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_new_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

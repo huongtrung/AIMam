@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#444444</color>
+    <color name="colorPrimaryDark">#444444</color>
+    <color name="colorAccent">#736c68</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_gray_line">#cccccc</color>
+    <color name="color_gray_bg">#D0CECD</color>
+    <color name="color_green">#669933</color>
+    <color name="color_green_pressed">#517e24</color>
+    <color name="color_light_green">#669933</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black_pressed">#202020</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_pressed">#33ffffff</color>
+    <color name="color_white_1">#736c68</color>
+    <color name="color_white_2">#eaeaea</color>
+    <color name="color_gray">#DBDBDB</color>
+    <color name="color_dark_green">#69B030</color>
+    <color name="color_dark_green_pressed">#52961c</color>
+
+    <color name="txt_gray">#a3a3a3</color>
+    <color name="txt_red">#e53935</color>
+    <color name="txt_orange">#df5f0d</color>
+    <color name="line_gray">#d6d6d6</color>
+    <color name="white_opacity">#aaffffff</color>
+    <color name="opacity">#00ffffff</color>
+    <color name="black_opacity">#55000000</color>
+    <color name="loading_cover">#88000000</color>
+    <color name="gray_dark">#333333</color>
+    <color name="color_black_bg">#0d0d0d</color>
+    <color name="color_gray_dark_bg">#090a10</color>
+    <color name="color_dark_bg">#444444</color>
+    <color name="color_orange">#D76110</color>
+    <color name="color_gray_star">#939393</color>
+    <color name="color_bg_gray">#FF343434</color>
+    <color name="hint_edt_edit_profile">#669933</color>
+</resources>

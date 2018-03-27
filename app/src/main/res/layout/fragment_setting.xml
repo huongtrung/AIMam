@@ -1,0 +1,114 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.InviteFriendsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bg_height"
+            android:background="@drawable/dummy_background">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_opacity" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/default_img" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/tv_user_name"
+                android:layout_below="@+id/civ_avatar" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_weight="1"
+            android:background="@color/color_gray"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_50"
+            android:paddingRight="@dimen/spacing_50"
+            android:paddingTop="@dimen/spacing_20">
+
+            <LinearLayout style="@style/layout_expandable">
+
+                <RelativeLayout
+                    style="@style/layout_text_common"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_common"
+                        android:text="@string/txt_setting_notify" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:switchMinWidth="@dimen/size_100"
+                        app:theme="@style/Color1SwitchStyle" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_language"
+                style="@style/layout_expandable"
+                android:background="@drawable/bg_transparent_selector">
+
+                <RelativeLayout
+                    style="@style/layout_text_common"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_common"
+                        android:text="@string/language" />
+
+                    <TextView
+                        android:id="@+id/tv_language"
+                        style="@style/text_common"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/vietnamese" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View style="@style/item_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_feedback"
+                style="@style/layout_expandable">
+
+                <RelativeLayout
+                    android:id="@+id/rl_email"
+                    style="@style/layout_text_common">
+
+                    <TextView
+                        style="@style/text_common"
+                        android:text="@string/txt_setting_feedback" />
+
+                    <ImageView
+                        style="@style/ic_layout_common"
+                        android:src="@drawable/ic_reverse_black" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

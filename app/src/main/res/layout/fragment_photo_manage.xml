@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg">
+
+    <LinearLayout
+        android:id="@+id/layout_content_manage"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/logo_green_size"
+            android:layout_height="@dimen/logo_green_size"
+            android:src="@drawable/ic_logo" />
+
+        <LinearLayout
+            android:id="@+id/layout_bt_camera"
+            style="@style/bt_layout_upload">
+
+            <ImageView
+                style="@style/ic_in_btn_layout"
+                android:src="@drawable/ic_camera" />
+
+            <TextView
+                style="@style/tv_in_btn_layout"
+                android:text="@string/camera" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bt_photo"
+            style="@style/bt_layout_upload">
+
+            <ImageView
+                style="@style/ic_in_btn_layout"
+                android:src="@drawable/ic_folder" />
+
+            <TextView
+                style="@style/tv_in_btn_layout"
+                android:text="@string/title_photo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_review_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_black"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_reviewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_btn"
+            android:src="@drawable/dummy_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/spacing_20">
+
+            <Button
+                android:id="@+id/bt_cancel"
+                style="@style/bt_cancel_about"
+                android:text="@string/title_cancel" />
+
+            <Button
+                android:id="@+id/btn_save_img"
+                style="@style/bt_send_about"
+                android:text="Save" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

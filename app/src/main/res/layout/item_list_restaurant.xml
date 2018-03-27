@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_black_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_10"
+    android:paddingRight="@dimen/spacing_10"
+    android:paddingLeft="@dimen/spacing_10">
+
+    <ImageView
+        android:id="@+id/iv_restaurant"
+        android:layout_width="@dimen/spacing_80"
+        android:layout_height="@dimen/spacing_80"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_img2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_restaurant"
+        android:layout_alignParentLeft="@+id/iv_restaurant"
+        android:layout_alignTop="@+id/iv_restaurant"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_toRightOf="@+id/iv_restaurant"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_restaurant_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_restaurant_name"
+                style="@style/text_restaurant_name"
+                android:layout_below="@id/tv_food_name"
+                android:ellipsize="end"
+                tools:text="THANG LONG" />
+
+            <TextView
+                android:id="@+id/tv_sample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_restaurant_name"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="YOUR SAMPLE TEXT GÓE HERE"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_orange_size"
+                android:layout_marginTop="@dimen/spacing_2" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_below="@id/tv_sample"
+                style="@style/text_restaurant_common"
+                tools:text="Lorem ipsum dolor sit a ment" />
+
+            <LinearLayout
+                android:id="@+id/ll_integration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:layout_marginTop="@dimen/spacing_2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/icon_view_like"
+                        android:layout_marginRight="@dimen/spacing_2"
+                        android:src="@drawable/ic_eye_green" />
+
+                    <TextView
+                        android:id="@+id/tv_count_views"
+                        style="@style/tv_view_like"
+                        android:text="@string/txt_view" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/icon_view_like"
+                        android:padding="2dp"
+                        android:layout_marginRight="@dimen/spacing_2"
+                        android:src="@drawable/ic_like_green" />
+
+                    <TextView
+                        android:id="@+id/tv_count_likes"
+                        style="@style/tv_view_like"
+                        android:text="@string/txt_subscribe" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <vn.gmorunsystem.aimam.ui.customview.UnsubscribedButtonView
+            android:id="@+id/btn_unsubscribe"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_unsub_height"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:background="@drawable/bg_unsubscribe_selector"
+            android:text="@string/title_unsubscribe"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/btn_unsub_text_size"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/item_divider_white"
+        android:layout_below="@+id/iv_restaurant"
+        android:layout_marginTop="@dimen/spacing_10" />
+</RelativeLayout>

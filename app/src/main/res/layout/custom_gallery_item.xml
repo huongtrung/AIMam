@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.gmorunsystem.aimam.ui.customview.ItemCustomGalleryView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                           android:orientation="vertical"
+                                                           android:layout_width="100dp"
+                                                           android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/imgThumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <CheckBox
+        android:id="@+id/chkImage"
+        android:layout_width="@dimen/upload_checkbox_size"
+        android:layout_height="@dimen/upload_checkbox_size"
+        android:layout_margin="@dimen/check_box_margin"
+        android:layout_gravity="bottom|right"
+        android:button="@drawable/custom_checkbox" />
+
+</vn.gmorunsystem.aimam.ui.customview.ItemCustomGalleryView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pf_head_height">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dummy_bg"
+                    android:scaleType="centerCrop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_opacity" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_pf_avatar"
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:src="@drawable/default_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/spacing_50" />
+
+                <TextView
+                    android:id="@+id/tv_pf_Username"
+                    style="@style/pf_tv"
+                    android:textColor="@color/color_white"
+                    android:text="UserName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/iv_pf_avatar"
+                    android:layout_marginTop="@dimen/spacing_16" />
+
+                <TextView
+                    android:id="@+id/tv_pf_editpf"
+                    style="@style/pf_tv"
+                    android:text="@string/nav_edit_profile"
+                    android:textColor="@color/color_green"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_pf_Username"
+                    android:layout_marginTop="@dimen/spacing_5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pf_editpf"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/spacing_20">
+
+                    <TextView
+                        android:id="@+id/tv_pf_postcount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/text_size_17"
+                        android:text="XX post"
+                        android:layout_gravity="end"
+                        android:textAlignment="textEnd"
+                        android:layout_marginRight="@dimen/spacing_10" />
+
+                    <TextView
+                        android:id="@+id/tv_pf_useful"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/text_size_17"
+                        android:text="XX usefuls"
+                        android:layout_gravity="start"
+                        android:textAlignment="textStart"
+                        android:layout_marginLeft="@dimen/spacing_10" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/spacing_16"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hashtag_title"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_hashtag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_green"
+                    android:text="#HashTag"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_marginTop="@dimen/spacing_10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white_1"
+                    android:layout_marginTop="@dimen/spacing_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uploaded image"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_17"
+                    android:layout_marginTop="@dimen/spacing_16" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycerList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/spacing_4" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

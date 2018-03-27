@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/spacing_40"
+    android:background="@drawable/app_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_16"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_Avatar"
+                    android:layout_width="@dimen/nav_avatar_size"
+                    android:layout_height="@dimen/nav_avatar_size"
+                    android:layout_marginTop="@dimen/spacing_10"
+                    android:src="@drawable/default_img">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/nav_item_tv_white"
+                    android:layout_marginLeft="@dimen/spacing_16"
+                    android:layout_marginTop="@dimen/spacing_25"
+                    android:layout_toEndOf="@+id/iv_Avatar"
+                    android:layout_toRightOf="@+id/iv_Avatar"
+                    tools:text="UserName" />
+
+                <TextView
+                    android:id="@+id/tv_editProfile"
+                    style="@style/nav_item_tv_green"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginLeft="@dimen/spacing_16"
+                    android:layout_marginTop="@dimen/spacing_10"
+                    android:layout_toEndOf="@+id/iv_Avatar"
+                    android:layout_toRightOf="@+id/iv_Avatar"
+                    android:text="@string/nav_edit_profile" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_coupon"
+                style="@style/nav_item_layout">
+
+                <ImageView
+                    android:id="@+id/iv_ic_coupon"
+                    style="@style/nav_item_ic"
+                    android:layout_marginRight="@dimen/spacing_16"
+                    android:src="@drawable/ic_coupon" />
+
+                <TextView
+                    android:id="@+id/tv_coupon"
+                    style="@style/nav_item_tv_white"
+                    android:layout_toEndOf="@+id/iv_ic_coupon"
+                    android:layout_toRightOf="@+id/iv_ic_coupon"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nav_coupon"></TextView>
+
+                <ImageView
+                    style="@style/nav_item_ic"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_back_reverse" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_item_divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_message"
+                style="@style/nav_item_layout">
+
+                <ImageView
+                    android:id="@+id/iv_ic_message"
+                    style="@style/nav_item_ic"
+                    android:layout_marginRight="@dimen/spacing_16"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:id="@+id/tv_Message"
+                    style="@style/nav_item_tv_white"
+                    android:layout_toEndOf="@+id/iv_ic_message"
+                    android:layout_toRightOf="@+id/iv_ic_message"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nav_message">
+
+                </TextView>
+
+                <ImageView
+                    style="@style/nav_item_ic"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_back_reverse" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_item_divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_invite"
+                style="@style/nav_item_layout">
+
+                <ImageView
+                    android:id="@+id/iv_ic_invite"
+                    style="@style/nav_item_ic"
+                    android:layout_marginRight="@dimen/spacing_16"
+                    android:src="@drawable/ic_invite" />
+
+                <TextView
+                    android:id="@+id/tv_Invite"
+                    style="@style/nav_item_tv_white"
+                    android:layout_toEndOf="@+id/iv_ic_invite"
+                    android:layout_toRightOf="@+id/iv_ic_invite"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nav_invite">
+
+                </TextView>
+
+                <ImageView
+                    style="@style/nav_item_ic"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_back_reverse" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_item_divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_setting"
+                style="@style/nav_item_layout">
+
+                <ImageView
+                    android:id="@+id/iv_ic_setting"
+                    style="@style/nav_item_ic"
+                    android:layout_marginRight="@dimen/spacing_16"
+                    android:src="@drawable/ic_setting" />
+
+                <TextView
+                    android:id="@+id/tv_Setting"
+                    style="@style/nav_item_tv_white"
+                    android:layout_toEndOf="@+id/iv_ic_setting"
+                    android:layout_toRightOf="@+id/iv_ic_setting"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nav_setting">
+
+                </TextView>
+
+                <ImageView
+                    style="@style/nav_item_ic"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_back_reverse" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_item_divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_about"
+                style="@style/nav_item_layout">
+
+                <ImageView
+                    android:id="@+id/iv_ic_about"
+                    style="@style/nav_item_ic"
+                    android:layout_marginRight="@dimen/spacing_16"
+                    android:src="@drawable/ic_about" />
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    style="@style/nav_item_tv_white"
+                    android:layout_toEndOf="@+id/iv_ic_about"
+                    android:layout_toRightOf="@+id/iv_ic_about"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nav_about" />
+
+                <ImageView
+                    style="@style/nav_item_ic"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_back_reverse" />
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_item_divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_logout"
+                style="@style/nav_item_layout">
+
+                <ImageView
+                    android:id="@+id/iv_ic_logout"
+                    style="@style/nav_item_ic"
+                    android:layout_marginRight="@dimen/spacing_16"
+                    android:src="@drawable/ic_logout" />
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    style="@style/nav_item_tv_white"
+                    android:layout_toEndOf="@+id/iv_ic_logout"
+                    android:layout_toRightOf="@+id/iv_ic_logout"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nav_logout" />
+
+                <ImageView
+                    style="@style/nav_item_ic"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_back_reverse" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/nav_item_tv_green"
+                android:layout_marginTop="@dimen/spacing_35"
+                android:text="@string/nav_hotline"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                style="@style/nav_item_tv_green"
+                android:layout_marginBottom="51dp"
+                android:text="@string/nav_email"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

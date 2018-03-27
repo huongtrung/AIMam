@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_gray"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.InviteFriendsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bg_height"
+                android:background="@drawable/dummy_background">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_opacity" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_avatar"
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/default_img" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/tv_user_name"
+                    android:layout_below="@+id/civ_avatar" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray"
+                android:paddingLeft="@dimen/spacing_50"
+                android:paddingRight="@dimen/spacing_50"
+                android:paddingTop="@dimen/spacing_50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_20"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/layout_expandable">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_email"
+                            style="@style/layout_text_common">
+
+                            <TextView
+                                style="@style/text_common"
+                                android:text="@string/txt_email" />
+
+                            <ImageView
+                                style="@style/ic_layout_common"
+                                android:src="@drawable/ic_reverse_black" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_expandable_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/et_email"
+                                style="@style/et_layout_expandable" />
+
+                            <TextView
+                                android:id="@+id/tv_error_email"
+                                style="@style/text_error"
+                                android:text="@string/error_mess_email" />
+
+                            <Button
+                                android:id="@+id/btn_email"
+                                style="@style/bt_custom_green"
+                                android:text="@string/title_send" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View style="@style/item_divider" />
+
+                    <LinearLayout style="@style/layout_expandable">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_fb"
+                            style="@style/layout_text_common">
+
+                            <TextView
+                                style="@style/text_common"
+                                android:text="@string/txt_fb" />
+
+                            <ImageView
+                                style="@style/ic_layout_common"
+                                android:src="@drawable/ic_reverse_black" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/item_divider" />
+
+                    <LinearLayout style="@style/layout_expandable">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_ins"
+                            style="@style/layout_text_common">
+
+                            <TextView
+                                style="@style/text_common"
+                                android:text="@string/txt_instagram" />
+
+                            <ImageView
+                                style="@style/ic_layout_common"
+                                android:src="@drawable/ic_reverse_black" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_expandable_instagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/et_instagram"
+                                style="@style/et_layout_expandable" />
+
+                            <Button
+                                android:id="@+id/btn_instagram"
+                                style="@style/bt_custom_green"
+                                android:text="@string/title_send" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

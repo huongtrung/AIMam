@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.InviteFriendsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/dummy_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_opacity" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_img" />
+
+        <TextView
+            style="@style/tv_user_name"
+            android:layout_below="@+id/civ_avatar"
+            android:id="@+id/tv_user_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_gray"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_50"
+        android:paddingRight="@dimen/spacing_50"
+        android:paddingTop="@dimen/spacing_50">
+
+        <LinearLayout style="@style/layout_expandable">
+
+            <LinearLayout
+                android:id="@+id/rl_email"
+                style="@style/layout_text_common"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_version"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="@color/color_black" />
+
+                <TextView
+                    android:id="@+id/tv_vesion_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_dark_green"
+                    android:textSize="@dimen/text_size_17" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/item_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_license"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_right"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/color_black" />
+    </LinearLayout>
+</LinearLayout>

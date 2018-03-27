@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_search_shop_upload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_60"
+                android:layout_marginBottom="@dimen/spacing_10"
+                android:background="@drawable/round_corner_edt"
+                android:hint="@string/txt_hint_upload"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:lines="2"
+                android:padding="@dimen/spacing_20"
+                android:textColor="@color/color_white_1"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/tv_not_result"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:text="@string/not_found_result"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:layout_below="@id/edt_search_shop_upload" />
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv_not_result">
+
+                <ImageView
+                    android:id="@+id/ic_place"
+                    android:layout_width="@dimen/ic_marker"
+                    android:layout_height="@dimen/ic_marker"
+                    android:layout_margin="@dimen/spacing_10"
+                    android:src="@drawable/ic_marker_green"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_upphoto_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_address"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_17"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_list_photoUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_address"
+                android:layout_marginTop="@dimen/spacing_10" />
+
+            <Button
+                android:id="@+id/btn_uploadImage"
+                style="@style/button_about_green"
+                android:layout_below="@id/rc_list_photoUpload"
+                android:layout_marginTop="@dimen/spacing_30"
+                android:text="@string/title_upload" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

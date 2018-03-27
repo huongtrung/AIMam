@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_black_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/special_item_padding">
+
+        <ImageView
+            android:id="@+id/iv_food"
+            android:layout_width="@dimen/size_120"
+            android:layout_height="@dimen/size_120"
+            android:layout_marginRight="@dimen/special_item_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_img1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_food"
+            android:layout_alignParentLeft="@+id/iv_food"
+            android:layout_alignParentBottom="@+id/iv_food"
+            android:layout_alignTop="@id/iv_food"
+            android:layout_toRightOf="@+id/iv_food"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_coupon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_dark_green"
+                android:textSize="@dimen/text_size_15"
+                android:textStyle="bold"
+                tools:text="Food or drink name" />
+
+            <TextView
+                android:id="@+id/tv_coupon_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_coupon_name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginTop="@dimen/spacing_2"
+                tools:text="Introduction of the food or drink" />
+
+            <Button
+                android:id="@+id/btn_get_code"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="@dimen/spacing_30"
+                android:layout_below="@+id/tv_coupon_content"
+                android:layout_marginBottom="@dimen/spacing_2"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:background="@drawable/bt_food_green_selector"
+                android:text="@string/txt_get_code"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_expiry_date"
+                style="@style/tv_food_common"
+                android:layout_below="@id/btn_get_code"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:layout_marginBottom="@dimen/spacing_5"
+                tools:text="Introduction of the food or drink od or drink" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_expiry_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/iv_fb"
+                    style="@style/iv_icon_food"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    style="@style/iv_icon_food"
+                    android:id="@+id/iv_instagram"
+                    android:layout_marginLeft="@dimen/spacing_5"
+                    android:layout_toRightOf="@+id/iv_fb"
+                    android:src="@drawable/ic_instagram" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/item_divider_common" />
+</LinearLayout>

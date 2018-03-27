@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_black_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+        android:id="@+id/rtb_review_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srb_drawBorderEnabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_10"
+        app:srb_fillColor="@color/color_dark_green"
+        app:srb_maxStarSize="@dimen/height_20"
+        app:srb_numberOfStars="5"
+        app:srb_rating="3"
+        app:srb_starBackgroundColor="@color/color_gray_star"
+        app:srb_starSize="@dimen/size_30"
+        app:srb_starsSeparation="4dp"
+        app:srb_stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_review_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtb_review_rate"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginTop="@dimen/spacing_20"
+        tools:text="5555555555555"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15" />
+
+    <ImageView
+        android:id="@+id/ic_fb_review"
+        android:layout_width="@dimen/ic_review_fb"
+        android:layout_height="@dimen/ic_review_fb"
+        android:layout_below="@+id/tv_review_description"
+        android:src="@drawable/ic_facebook" />
+
+    <ImageView
+        android:id="@+id/ic_instagram_review"
+        android:layout_width="@dimen/ic_review_fb"
+        android:layout_height="@dimen/ic_review_fb"
+        android:layout_below="@+id/tv_review_description"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_toRightOf="@+id/ic_fb_review"
+        android:src="@drawable/ic_instagram" />
+
+    <ImageView
+        android:id="@+id/iv_review_cm"
+        android:layout_width="@dimen/ic_review_cm_width"
+        android:layout_height="@dimen/ic_review_cm_height"
+        android:layout_below="@+id/tv_review_description"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_toRightOf="@+id/ic_instagram_review"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_comment" />
+
+    <LinearLayout
+        android:id="@+id/ll_integration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_review_description"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/iv_icon_food"
+                android:layout_marginRight="@dimen/spacing_5"
+                android:src="@drawable/ic_eye_green" />
+
+            <TextView
+                android:id="@+id/tv_count_view"
+                style="@style/tv_food_common"
+                android:layout_marginRight="@dimen/spacing_2"
+                android:text="@string/txt_view" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_15"
+                android:layout_height="@dimen/spacing_15"
+                android:layout_marginRight="@dimen/spacing_5"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_like_green" />
+
+            <TextView
+                android:id="@+id/tv_count_like"
+                style="@style/tv_food_common"
+                android:layout_gravity="bottom"
+                android:text="@string/txt_like" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@id/iv_review_cm"
+        android:layout_marginTop="@dimen/spacing_20"
+        style="@style/item_divider_review" />
+
+    <TextView
+        android:id="@+id/tv_numCm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="@dimen/spacing_6"
+        tools:text="Comments"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_15" />
+</RelativeLayout>

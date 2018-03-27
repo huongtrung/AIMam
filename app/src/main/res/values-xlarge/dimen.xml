@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Splash Screen-->
+    <dimen name="logo_size">450dp</dimen>
+    <!--Home Screen-->
+    <dimen name="shop_viewpager_height">200dp</dimen>
+    <!--Couponlist screen-->
+    <dimen name="couponlist_img_size">140dp</dimen>
+    <dimen name="couponlist_res_name_text_size">24sp</dimen>
+    <dimen name="couponlist_orange_text_size">14sp</dimen>
+    <dimen name="couponlist_white_text_size">16sp</dimen>
+    <!--Detail coupon screen-->
+    <dimen name="dcs_code_text_size">26sp</dimen>
+
+    <!--icon common-->
+    <dimen name="ic_bottom_width">35dp</dimen>
+    <dimen name="ic_bottom_height">25dp</dimen>
+    <dimen name="avatar_size">150dp</dimen>
+
+    <!--Shop user's subscribed-->
+    <dimen name="btn_unsub_height">55dp</dimen>
+    <dimen name="btn_unsub_text_size">11sp</dimen>
+    <dimen name="text_orange_size">14sp</dimen>
+
+    <!--Photo manage-->
+    <dimen name="logo_green_size">220dp</dimen>
+
+    <!-- Custom Gallery -->
+    <dimen name="check_box_margin">12dp</dimen>
+
+    <!-- Shop Hot -->
+    <dimen name="special_item_img_size">120dp</dimen>
+    <dimen name="special_item_like_size">17dp</dimen>
+    <dimen name="special_item_like_text_size">12sp</dimen>
+    <dimen name="special_item_padding">14dp</dimen>
+    <dimen name="special_item_title_text_size">17sp</dimen>
+    <dimen name="special_item_descr_text_size">17sp</dimen>
+    <dimen name="special_item_descr_margin_top">8dp</dimen>
+    <dimen name="special_item_price_text_size">17sp</dimen>
+    <dimen name="special_item_rate_star_size">22dp</dimen>
+
+    <!--Edit Profile-->
+    <dimen name="text_change_photo_size">21sp</dimen>
+    <!--Upload Image-->
+    <dimen name="item_image_upload_text_size">15dp</dimen>
+    <dimen name="upload_iv_item">90dp</dimen>
+    <dimen name="upload_iv_large_item">140dp</dimen>
+    <dimen name="auto_complete_edt_height">60dp</dimen>
+    <dimen name="shop_menu_item_margin">15dp</dimen>
+    <!--Tutorial screen-->
+    <dimen name="top_to_text_green">35dp</dimen>
+    <dimen name="space_between_green_white">25dp</dimen>
+    <dimen name="space_bt_skip_to_bottom">25dp</dimen>
+    <dimen name="space_bt_skip_to_indicator">25dp</dimen>
+    <!--Review screen-->
+    <dimen name="rating_star_size">24dp</dimen>
+    <dimen name="shop_title_text_size">21sp</dimen>
+</resources>

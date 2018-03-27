@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom"
+    android:background="@color/color_black"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        style="@style/bottom_tab">
+
+        <ImageView
+            android:id="@+id/iv_list"
+            style="@style/tab_image"
+            android:src="@drawable/ic_list" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        style="@style/bottom_tab">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            style="@style/tab_image"
+            android:src="@drawable/ic_home" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_map"
+        style="@style/bottom_tab">
+
+        <ImageView
+            android:id="@+id/iv_map"
+            style="@style/tab_image"
+            android:src="@drawable/ic_marker" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_favorite"
+        style="@style/bottom_tab">
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            style="@style/tab_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_farvorite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_camera"
+        style="@style/bottom_tab">
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            style="@style/tab_image"
+            android:src="@drawable/ic_camera" />
+
+    </RelativeLayout>
+</LinearLayout>

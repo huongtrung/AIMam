@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_coupondetail_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/coupondetail_header_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_bg" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            tools:text="Capuchino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_couponcontent"
+            style="@style/detailcoupon_screen_tv"
+            android:layout_marginTop="@dimen/spacing_4"
+            tools:text="Coupon Content: discount 10%" />
+
+        <Button
+            android:id="@+id/btn_coupon_code"
+            style="@style/bt_code_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:paddingLeft="@dimen/spacing_5"
+            android:paddingRight="@dimen/spacing_5"
+            tools:text="15DED5"
+            android:textSize="@dimen/dcs_code_text_size" />
+
+        <TextView
+            android:id="@+id/tv_expire"
+            style="@style/detailcoupon_screen_tv"
+            android:layout_marginTop="@dimen/spacing_16"
+            tools:text="Co gia tri su dung den 30/5/2018" />
+
+        <View
+            style="@style/nav_item_divider"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:layout_marginTop="@dimen/spacing_16" />
+
+        <TextView
+            android:id="@+id/tv_coupondetail_storeName"
+            style="@style/detailcoupon_screen_tv"
+            android:layout_marginTop="@dimen/spacing_16"
+            tools:text="He thong warp roll"
+            android:textColor="@color/color_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_store_address"
+            style="@style/detailcoupon_screen_tv"
+            android:layout_marginBottom="@dimen/spacing_10"
+            tools:text="07, đường 7C, Khu Phố 5, Phường An Phú, Quận 2, Tp HCM 07, đường 7C, Khu Phố 5, Phường An Phú, Quận 2, Tp HCM" />
+
+    </LinearLayout>
+</ScrollView>

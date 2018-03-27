@@ -1,0 +1,65 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_bg"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.ShopStampFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_check_in"
+            style="@style/bt_subscribe"
+            android:layout_margin="@dimen/spacing_10"
+            android:text="@string/title_check_in" />
+
+        <LinearLayout
+            android:id="@+id/ll_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title_stamp_common"
+                    android:text="@string/title_number_of_stamps" />
+
+                <TextView
+                    android:id="@+id/stamp_count"
+                    style="@style/text_stamp_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/item_divider"
+            android:layout_margin="@dimen/spacing_10" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_stamps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_10" />
+
+
+        <TextView
+            android:id="@+id/tv_shop_stamp_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:gravity="center"
+            android:text="@string/this_shop_don_t_have_stamp_list"
+            android:textColor="@color/color_gray"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

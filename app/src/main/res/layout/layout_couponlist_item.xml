@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_4"
+    android:background="@color/color_black_bg">
+
+    <ImageView
+        android:id="@+id/iv_imgsample"
+        android:layout_width="@dimen/couponlist_img_size"
+        android:layout_height="@dimen/couponlist_img_size"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_restaurant"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/iv_imgsample"
+        android:text="Restaurant"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_22"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:lines="1" />
+
+    <TextView
+        android:id="@+id/tv_title_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_imgsample"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_below="@+id/tv_restaurant"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:text="Sample Text go here"
+        android:textSize="@dimen/spacing_12"
+        android:textColor="@color/txt_orange"
+        android:textAllCaps="true"
+        android:lines="1" />
+
+    <TextView
+        android:id="@+id/tv_content_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_imgsample"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:layout_below="@+id/tv_title_orange"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/white"
+        android:lines="1" />
+
+
+    <View
+        style="@style/rv_divider"
+        android:layout_marginTop="@dimen/spacing_6"
+        android:layout_below="@id/iv_imgsample" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/tut_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_5"
+        android:gravity="center_horizontal|center_vertical"
+        app:fillColor="@color/color_dark_green"
+        app:pageColor="@color/color_white"
+        app:radius="@dimen/spacing_7"
+        app:strokeWidth="0dp"
+        android:layout_above="@+id/btn_tut_skip" />
+
+    <Button
+        android:id="@+id/btn_tut_skip"
+        style="@style/btn_skip_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/space_bt_skip_to_indicator"
+        android:layout_marginBottom="@dimen/space_bt_skip_to_bottom"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

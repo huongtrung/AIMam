@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/iv_edit_ava"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:src="@drawable/default_img" />
+
+            <TextView
+                android:id="@+id/tv_changephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/edit_pf_changephoto"
+                android:textSize="@dimen/text_size_17"
+                android:textColor="@color/color_green"
+                android:layout_marginTop="@dimen/spacing_4"
+                android:layout_marginBottom="@dimen/spacing_20" />
+
+            <EditText
+                style="@style/edit_pf_edt"
+                android:id="@+id/edt_fullname"
+                android:hint="@string/edt_hint_name"
+                android:textColorHint="@color/hint_edt_edit_profile"
+                android:maxLength="100" />
+
+            <TextView
+                android:id="@+id/tv_error_user_name"
+                style="@style/text_error_edit_pf" />
+
+            <EditText
+                style="@style/edit_pf_edt"
+                android:id="@+id/edt_web"
+                android:hint="@string/edt_hint_web"
+                android:textColorHint="@color/hint_edt_edit_profile"
+                android:maxLength="100" />
+
+            <EditText
+                style="@style/edit_pf_edt"
+                android:id="@+id/edt_intro"
+                android:hint="@string/edt_hint_intro"
+                android:textColorHint="@color/hint_edt_edit_profile"
+                android:maxLength="200" />
+
+            <EditText
+                style="@style/edit_pf_edt"
+                android:id="@+id/edt_birthday"
+                android:hint="@string/edt_hint_birthday"
+                android:textColorHint="@color/hint_edt_edit_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/edit_pf_edt"
+                    android:id="@+id/tv_gender"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_5"
+                    android:layout_marginLeft="@dimen/spacing_5"
+                    android:text="@string/edt_hint_gender" />
+
+                <Spinner
+                    android:id="@+id/spinner_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+
+            <EditText
+                style="@style/edit_pf_edt"
+                android:id="@+id/edt_address"
+                android:hint="@string/edt_hint_address"
+                android:textColorHint="@color/hint_edt_edit_profile"
+                android:maxLength="200" />
+
+            <EditText
+                style="@style/edit_pf_edt"
+                android:id="@+id/edt_work"
+                android:hint="@string/edt_hint_work"
+                android:textColorHint="@color/hint_edt_edit_profile"
+                android:maxLength="200" />
+
+            <Button
+                android:id="@+id/btn_save_pf"
+                style="@style/btn_save_pf"
+                android:text="Save"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/spacing_10" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

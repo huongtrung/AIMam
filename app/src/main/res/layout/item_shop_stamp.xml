@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.gmorunsystem.aimam.ui.customview.SquareStampItemView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                         xmlns:tools="http://schemas.android.com/tools"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="match_parent"
+                                                         android:background="@drawable/bg_item_stamp">
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_24"
+        tools:text="5" />
+
+    <ImageView
+        android:id="@+id/iv_crown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_15"
+        android:src="@drawable/ic_stamp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_small_crown"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/ic_stamp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_15"
+        android:src="@drawable/star"
+        android:visibility="gone" />
+
+</vn.gmorunsystem.aimam.ui.customview.SquareStampItemView>

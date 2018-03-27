@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_44"
+    android:background="@color/color_black"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/spacing_40"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/ic_back_width"
+                android:layout_height="@dimen/ic_back_height"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:textAlignment="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_15"
+            tools:text="Titleeeeeeeeeeeeeeeeee" />
+
+
+        <RelativeLayout
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/spacing_40"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/ic_back_width"
+                android:layout_height="@dimen/ic_back_height"
+                android:src="@drawable/ic_search" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    tools:context="vn.gmorunsystem.aimam.ui.fragment.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_60">
+
+            <LinearLayout
+                android:id="@+id/layout_regist_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_30"
+                    android:layout_marginTop="@dimen/spacing_100"
+                    android:text="@string/title_sign_up"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_22"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_regist_userName"
+                    style="@style/et_user_signUp"
+                    android:hint="@string/title_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="100" />
+
+                <TextView
+                    android:id="@+id/tv_error_name"
+                    style="@style/text_error_register"
+                    android:text="@string/error_mess_username" />
+
+                <EditText
+                    android:id="@+id/et_regist_email"
+                    style="@style/et_user_signUp"
+                    android:hint="@string/title_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/tv_error_email"
+                    style="@style/text_error_register"
+                    android:text="@string/error_mess_email" />
+
+                <EditText
+                    android:id="@+id/et_regist_password"
+                    style="@style/et_user_signUp"
+                    android:hint="@string/title_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="32" />
+
+                <TextView
+                    android:id="@+id/tv_error_password"
+                    style="@style/text_error_register"
+                    android:text="@string/error_mess_pass" />
+
+                <EditText
+                    android:id="@+id/et_regist_confirmPass"
+                    style="@style/et_user_signUp"
+                    android:hint="@string/title_confirm"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="32" />
+
+                <TextView
+                    android:id="@+id/tv_error_confirm"
+                    style="@style/text_error_register"
+                    android:text="@string/error_mess_pass_not_incorrect" />
+
+                <Button
+                    android:id="@+id/bt_regist"
+                    style="@style/bt_custom_green"
+                    android:text="@string/title_continue" />
+
+                <TextView
+                    style="@style/tv_user_login"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_35"
+                    android:text="@string/title_text_login" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_15">
+
+                    <ImageView
+                        android:id="@+id/iv_regist_fb"
+                        android:layout_width="@dimen/ic_fb_height"
+                        android:layout_height="@dimen/ic_fb_height"
+                        android:layout_marginRight="@dimen/spacing_25"
+                        android:src="@drawable/ic_facebook_large" />
+
+                    <ImageView
+                        android:id="@+id/iv_regist_instagram"
+                        android:layout_width="@dimen/ic_fb_height"
+                        android:layout_height="@dimen/ic_fb_height"
+                        android:src="@drawable/ic_instagram_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
