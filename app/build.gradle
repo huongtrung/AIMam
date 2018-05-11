@@ -13,8 +13,8 @@ android {
             storePassword 'tank2017'
         }
     }
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "vn.gmorunsystem.aimam"
